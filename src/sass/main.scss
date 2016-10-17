@@ -1,0 +1,82 @@
+$cont-padding-LR: 10px;
+$cont-width: 540px;
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	font-size: 14px;
+}
+
+.big-box{
+	width: $cont-width;
+	border: 2px solid lightgrey;
+	padding: 0px;
+}
+
+.container{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+
+.header-box{
+	background: #3E8ACC;
+	color: white;
+	padding: 25px;
+	font-weight: lighter;
+	margin:0px;
+	margin-bottom: 20px;
+	font-size: 18pt;
+}
+
+$inputBarHeight: 30px;
+.inputContainer {
+	display: block;
+	width: 100%;
+	border: 1px solid lightgrey;
+	margin-bottom: 20px;
+	position: relative;
+
+	.icon{
+		display: inline-block;
+		vertical-align: top;
+		padding-top: 8px;
+		width: 20px;
+		color: lightgrey;
+		position: absolute;
+		left: 10px;
+	}
+
+	.inputBar {
+		height: $inputBarHeight;
+		padding-left: 30px;
+		display: inline-block;
+		width: 100%;
+		border: none;
+		font-size: 9pt;
+	}
+
+	#textBox{
+		height: 80px;
+		padding-top: 8px
+	}
+	#selectBar {
+		width: 100%;
+	}
+}
+
+.footer{
+	background: #C8DEF1;
+	height: 75px;
+}
+
+.submit-button{
+	background: #3288D6;
+	color: white;
+	border: none;
+	border-radius: 2px;
+	height: 35px;
+	width: 100px;
+	margin: 20px;
+	font-size: 9pt;
+}
