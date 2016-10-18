@@ -11,6 +11,7 @@ $cont-width: 540px;
 	width: $cont-width;
 	border: 2px solid lightgrey;
 	padding: 0px;
+	margin: 30px;
 }
 
 .container{
@@ -61,8 +62,44 @@ $inputBarHeight: 30px;
 		padding-top: 8px
 	}
 	#selectBar {
-		width: 100%;
+		width: 110%;
+		appearance: none;
+		background: white;
 	}
+	.selectBox{
+		overflow: hidden;
+		position: relative;
+	}
+	.selectArrowBox{
+		background: #F2F4FA;
+		position: absolute;
+		right: 0px;
+		width: 30px;
+		height: 100%;
+		pointer-events: none;
+		border-left: 1px solid #DAE0ED
+	}
+
+	.arrow-up {
+		margin: auto;
+		margin-top: 8px;
+		width: 0; 
+		height: 0; 
+		border-left: 3px solid transparent;
+		border-right: 3px solid transparent;
+		border-bottom: 5px solid #B3BFC5;
+	}
+
+	.arrow-down {
+		margin: auto;
+		margin-top: 4px;
+		width: 0; 
+		height: 0; 
+		border-left: 3px solid transparent;
+		border-right: 3px solid transparent; 
+		border-top: 5px solid #B3BFC5;
+	}
+
 }
 
 .footer{
