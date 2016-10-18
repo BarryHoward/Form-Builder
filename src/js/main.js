@@ -18,11 +18,16 @@ function newInput(element){
 	var divHTML = `<div class="inputContainer">`
 	var iconHTML = `<i class="icon fa ${element.icon}"></i>`
 	if (element.type==="select"){
-		var inputHTML = `<div class="selectBox"><div class="selectArrowBox"><div class="arrow-up"></div><div class="arrow-down"></div></div><select class="inputBar" id="selectBar" name="${element.label}">`
+		var inputHTML = `<div class="selectBox inputBox">
+							<div class="selectArrowBox">
+								<div class="arrow-up"></div>
+								<div class="arrow-down"></div>
+							</div>
+							<select class="inputBar" id="selectBar" name="${element.label}">`
 		inputHTML = inputHTML + `<option value="" disabled selected>${element.label}...</option>`;
 		for (var i=0; i<element.options.length; i++){
 			var optionHTML = `<option value="${element.options[i].value}">${element.options[i].label}</option>`;
-			inputHTML = inputHTML+optionHTML;
+			inputHTML = inputHTML + optionHTML;
 		}
 		inputHTML = inputHTML + `</div></select>`;
 

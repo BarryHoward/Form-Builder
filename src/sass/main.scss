@@ -57,6 +57,10 @@ $inputBarHeight: 30px;
 		font-size: 9pt;
 	}
 
+	.inputBar:focus {
+		outline: none;
+	}
+
 	#textBox{
 		height: 80px;
 		padding-top: 8px
