@@ -9,9 +9,11 @@ $cont-width: 540px;
 
 .big-box{
 	width: $cont-width;
-	border: 2px solid lightgrey;
+	border: 2px outset lightgrey;
 	padding: 0px;
-	margin: 30px;
+	margin: 30px; 
+	border-radius: 8px;
+	overflow: hidden;
 }
 
 .container{
@@ -59,6 +61,9 @@ $inputBarHeight: 30px;
 
 	.inputBar:focus {
 		outline: none;
+	}
+	.inputBar:hover{
+		background: #F0F0F0;
 	}
 
 	#textBox{
